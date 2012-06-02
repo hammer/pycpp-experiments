@@ -4,6 +4,7 @@ cdef extern from "libcalg-1.0/libcalg/queue.h":
     pass
   ctypedef void* QueueValue
 
+  # Typo in the paper: new_queue()
   Queue* queue_new()
   void queue_free(Queue* queue)
 

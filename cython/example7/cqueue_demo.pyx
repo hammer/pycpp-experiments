@@ -2,6 +2,7 @@ cimport cqueue
 cimport python_exc
 
 cdef class Queue:
+  # Typo in the paper: not a pointer
   cdef cqueue.Queue *_c_queue
 
   def __cinit__(self):
