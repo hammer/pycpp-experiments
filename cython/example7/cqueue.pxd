@@ -1,10 +1,11 @@
-cdef extern from "libcalg/queue.h":
+cdef extern from "libcalg-1.0/libcalg/queue.h":
   # Opaque handle
   ctypedef struct Queue:
     pass
   ctypedef void* QueueValue
 
-  Queue* new_queue()
+  # Typo in the paper: new_queue()
+  Queue* queue_new()
   void queue_free(Queue* queue)
 
   int queue_push_head(Queue* queue, QueueValue data)
