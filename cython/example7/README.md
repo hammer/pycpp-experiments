@@ -6,5 +6,9 @@ To build
 To use
 
     >>> from cqueue_demo import Queue as Q
-    >>> Q()
+    >>> q = Q()
+    >>> q.append(1)
+    >>> q.peek()
+    >>> q.pop()
+
 
