@@ -1,0 +1,2 @@
+include cqueue_demo.pyx
+include README
